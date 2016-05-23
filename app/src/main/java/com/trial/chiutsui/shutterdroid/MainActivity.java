@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 
 import com.trial.chiutsui.shutterdroid.shutterstock.ShutterImages;
 import com.trial.chiutsui.shutterdroid.shutterstock.ShutterStock;
@@ -18,6 +19,7 @@ import retrofit.RetrofitError;
 import retrofit.client.Response;
 
 public class MainActivity extends AppCompatActivity {
+    private static final String TAG = "MainActivity";
 
     private List<ShutterImages> mImages;
     private ImagesAdapter mAdapter;
@@ -44,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void failure(RetrofitError error) {
-
+                Log.d(TAG,error.toString());
             }
         });
     }

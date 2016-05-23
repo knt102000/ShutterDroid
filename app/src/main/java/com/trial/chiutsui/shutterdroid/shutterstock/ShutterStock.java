@@ -15,7 +15,7 @@ import retrofit.RetrofitError;
  * Created by chiutsui on 5/22/16.
  */
 public class ShutterStock {
-    private static final String API_URL = "http://api.shutterstock.com/v2";
+    private static final String API_URL = "https://api.shutterstock.com/v2";
 
     private static final String CLIENT_ID = "85cc76dc2f03d8d2c17c";
     private static final String CLIENT_SECRET = "e0f2890e721a144eeeee9150f4bb078e81e7a29a";
