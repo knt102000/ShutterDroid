@@ -32,7 +32,7 @@ public class ImagesAdapter extends RecyclerView.Adapter<ImagesAdapter.ViewHolder
     public void onBindViewHolder(ViewHolder holder, int position) {
         ShutterImages image = mImages.get(position);
 
-        Picasso.with(mContext).load(image.getLargeThumb()).into(holder.mImageView);
+        Picasso.with(mContext).load(image.getPreview()).into(holder.mImageView);
     }
 
     @Override

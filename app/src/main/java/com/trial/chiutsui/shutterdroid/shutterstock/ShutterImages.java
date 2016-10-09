@@ -42,4 +42,8 @@ public class ShutterImages {
     public String getLargeThumb() {
         return mAssets.mLargeThumb.mUrl;
     }
+
+    public String getPreview() {
+        return mAssets.preview.mUrl;
+    }
 }
